@@ -5,10 +5,12 @@
 	"dependencies": {
 		"@material/web": "^1.4.1",
 		"@rollup/plugin-node-resolve": "^15.2.3",
-		"rollup": "^4.15.0"
+		"android-fastboot": "^1.1.3",
+		"rollup": "^4.15.0",
+		"webadb": "^1.0.1"
 	},
-        "scripts": {
-                "jsrollup": "pnpm rollup -p @rollup/plugin-node-resolve ./ui/js/material.js -o ./ui/js/bundle.js",
-                "sidekick": "pnpm tauri dev"
-        }
+	"scripts": {
+		"jsrollup": "pnpm rollup -p @rollup/plugin-node-resolve ./ui/js/material.js -o ./ui/js/bundle.js",
+		"sidekick": "pnpm tauri dev"
+	}
 }
