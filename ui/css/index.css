@@ -1,0 +1,29 @@
+/* The jerry-rigged material-design like sidebar menu */
+.sidenav {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f7e9fb;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Material button paddings */
+.sidenav md-filled-tonal-icon-button {
+  padding: 0px 10px 0px 10px;
+}
+
+/* Style page content */
+.main {
+  margin-left: 60px;
+  padding: 0px 10px;
+  background-color: #fff7fd;
+}
+
+/* HTML body coloring */
+.md-body {
+  background-color: #fff7fd;
+}
