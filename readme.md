@@ -3,4 +3,4 @@
 
 ## Contributing
 
-*DONT. yet.*
+*DON'T. yet.*
