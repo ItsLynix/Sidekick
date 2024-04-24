@@ -1,3 +1,6 @@
+:root {
+  --md-sys-color-primary: #6750A4;
+}
 
 /* The jerry-rigged material-design like sidebar menu */
 .sidenav {
@@ -15,6 +18,16 @@
 /* Material button paddings */
 .sidenav-button {
   padding: 0px 10px 10px 10px;
+}
+
+/* Material button paddings */
+.sidenav-button-active {
+  padding: 0px 10px 10px 10px;
+  --md-sys-color-secondary-container: var(--md-sys-color-primary);
+}
+
+.sidenav-button-active md-icon {
+  color: #FFFFFF;
 }
 
 /* Style page content */

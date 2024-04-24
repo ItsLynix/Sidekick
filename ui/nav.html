@@ -1,11 +1,32 @@
 <div class="sidenav">
-  <md-filled-tonal-icon-button class="sidenav-button" id="nav-home">
+  <md-filled-tonal-icon-button class="sidenav-button" id="nav-home" href="index.html">
     <md-icon><span class="material-symbols-outlined">home</span></md-icon>
   </md-filled-tonal-icon-button>
-  <md-filled-tonal-icon-button class="sidenav-button" id="nav-adb">
+  <md-filled-tonal-icon-button class="sidenav-button" id="nav-adb" href="adb.html">
     <md-icon><span class="material-symbols-outlined">adb</span></md-icon>
   </md-filled-tonal-icon-button>
-  <md-filled-tonal-icon-button class="sidenav-button" id="nav-fastboot">
+  <md-filled-tonal-icon-button class="sidenav-button" id="nav-fastboot" href="fastboot.html">
     <md-icon><span class="material-symbols-outlined">system_update</span></md-icon>
   </md-filled-tonal-icon-button>
+  <md-filled-tonal-icon-button class="sidenav-button" id="nav-settings" href="settings.html">
+    <md-icon><span class="material-symbols-outlined">settings</span></md-icon>
+  </md-filled-tonal-icon-button>
 </div>
+<script>
+  // where are we?
+  const currentPage = window.location.pathname;
+
+  // get nav element
+  const navHome = document.getElementById('nav-home');
+  const navFastboot = document.getElementById('nav-fastboot');
+  const navAdb = document.getElementById('nav-adb');
+
+  // active logic
+  if (currentPage.includes('fastboot.html')) {
+    navFastboot.classList.add('sidenav-button-active');
+  } else if (currentPage.includes('adb.html')) {
+    navAdb.classList.add('sidenav-button-active');
+  } else {
+    navHome.classList.add('sidenav-button-active');
+  }
+</script>
